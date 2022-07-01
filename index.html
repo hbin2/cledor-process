@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>끌레도르프로세스 페이지</title>
 
+
     <script src="./script/jquery-3.6.0.min.js"></script>
     <script src="./script/script.js"></script>
+    
+    <!-- 풀페이지 -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js" integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css" integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- 테일윈드 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+     <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
 
     <link rel="stylesheet" href="./css/style.css">
 
+
 </head>
 <body>
+
+    <div class="layout-wrap con">
+
+        <div id="fullpage">
+
+        <section class="section main-page ">
+            <img src="./images/Rectangle 1.png"  class="main-bg w-full h-full object-cover" alt="배경이미지">
+                
+            <div class="page-contents">
+
+                    <div class="title-option">
+                        <div class="main-title flex gap-20px">
+                            <a href="#" class="logo-font  "><img src="./images/Cléor.png" class=" " alt="로고-폰트"></a>
+                 
+                            <a href="#" class="cledorApp "><img src="./images/앱.png"  alt="끌레도르앱"></a>
+                    
+                         </div>
+    
+                         <div class="mt-10px"><img src="./images/부제목.png" alt=""></a></div>
+                                
+                    </div>
+                    
+                 
+      
+                     <ul class="project-option">
+                        <li><span>PROJECT - REDISIGN</span></li>
+                        <li><span>DURATION - 3WEEK</span></li>
+                        <li class="tools-image">
+                            <ul class="flex gap-30px">
+                                <li><span>TOOLS</span></li>
+                                <ul class="flex gap-30px">
+                                    <li><img src="./images/Figma.png" alt="피그마"></li>
+                                    <li><img src="./images/Photoshop.png" alt="포토샵"></li>
+                                    <li><img src="./images/Illustrator.png" alt="일러스트"></li>
+                                </ul>
+                             
+                            </ul>
+                        </li>
+                     </ul>
+      
+                    </div>
+        </section>
+
+        <section class="section project-overview">
+            <div class="overview-bg"><img src="./images/브랜드배경.png" class=" object-cover" alt="프로젝트 오버뷰 배경">
+
+           
+             <div class="overview-title">
+                <div data-aos="fade-up">
+                    <ul>
+                        <li class="title-name" ><img src="./images/name.png"  alt="프로젝트 오버뷰"></li>
+                        <li class="title-explain mt-33px "><span>끌레도르의 기존 사이트를 분석하였을때 타브랜드들과 큰 차이점을 둔 <br>
+                            <span class="font-bold">‘끌레도르 만의 프리미엄 아이스크림과 정기구독 서비스’</span>를 강조하기에는 <br>
+                            사이트 구성이 단조롭고, 브랜드색깔이 많이 나타나지 않은 것 같은 <br>
+                            아쉬움이 있어서 리디자인을 진행하게 되었습니다.</span></li>
+    
+                       
+                    </ul>
+    
+                </div>   
+               
+                <div class=" ">
+                    <img src="./images/프로젝트 폰이미지.png"  class=" phone-image block object-cover" alt="">
+                </div>
+              
+             </div>
+
+            </div>
+        </section>
+
+    </div>
+    </div>
     
 </body>
 </html>

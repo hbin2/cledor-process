@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+/* 노멀라이징 */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,li{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img, video{
+    max-width: 100%;
+    display: block;
+}
+
+/* 라이브러리 */
+.justify-between {
+    justify-content:space-between;
+  }
+
+.justify-center{
+    justify-content: center;
+
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.self-end{
+    align-self: end;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-1{
+    flex: 1 1 0%;
+}
+
+.flex-shrink-0{
+    flex-shrink: 0;
+}
+
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.max-w-100{
+    max-width: 100%;
+}
+
+.block{
+    display: block;
+}
+
+.cell{
+    float: left;
+}
+
+.cell-r{
+    float: right;
+}
+
+.gap-10px{
+    gap: 10px;
+}
+
+
+.gap-20px{
+    gap: 20px;
+}
+
+.gap-30px{
+    gap: 30px;
+}
+
+.gap-40px{
+    gap: 40px;
+}
+
+.mt-10px{
+    margin-top: 10px;
+}
+
+.mt-20px{
+    margin-top: 20px;
+}
+
+.mt-30px{
+    margin-top: 30px;
+}
+
+.mt-40px{
+    margin-top: 40px;
+}
+
+.mt-60px{
+    margin-top: 60px;
+}
+
+.ml-10px{
+    margin-left: 10px;
+}
+
+.mr-20px{
+    margin-right: 20px;
+}
+
+.ml-30px{
+    margin-left: 30px;
+}
+
+.ml-40px{
+    margin-left: 40px;
+}
+
+.ml-50px{
+    margin-left: 50px;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.h-1000px{
+    height: 1000px;
+}
+
+
+/* 커스터마이징 */
+ 
+
+html> body{
+    font-family: 'Hahmlet', serif;
+    color: #3F3B37;
+    text-underline-position: under;
+    
+    }
+
+    .con{            
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+
+
+ /* 메인페이지  */
+    .main-page{
+        width: 1920px;
+        height: 100vh;
+        background-color: #D5DEC7;
+        position: relative;
+    }
+
+  .title-option{
+    position: absolute;
+    top: 18%;
+    right: 7%;
+  }
+
+  /* 로고이미지 */
+  .main-title .cledorApp img {
+  animation:fly 2s linear infinite;
+  }
+
+
+  .cledorApp img{
+    width: 100%;
+    display: block;
+  }
+
+  @keyframes fly {
+  
+    0% {
+      
+    }
+    
+    50% {
+      margin-top:20px;
+    }
+    
+  
+    100% {
+      
+    }
+  }
+  
+  
+
+  .project-option {
+    position: absolute;
+    bottom: 9%;
+    right: 13%;
+  }
+
+  .project-option > li:not(first-child){
+     margin-top: 20px;
+  }
+
+  .project-option > li span{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #3F3B37;
+    letter-spacing: 1px;
+  }
+
+
+  /* 페이지 오버뷰 */
+  .project-overview{
+    position: relative;
+  }
+
+  .overview-bg{
+    width: 1920px;
+    height: 100vh;
+   
+  }
+
+  .overview-title {
+    position: absolute;
+    top: 19%;
+    left: 12%;
+  }
+
+
+ .title-explain {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #3F3B37;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 38px;
+    margin-top: 35px;
+  }
+
+ .phone-image{
+    position: absolute;
+    top: 170%;
+    left: 105%;
+
+ }
