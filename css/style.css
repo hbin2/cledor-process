@@ -30,6 +30,11 @@ img, video{
 }
 
 /* 라이브러리 */
+.object-cover{
+  object-fit: cover;
+}
+
+
 .justify-between {
     justify-content:space-between;
   }
@@ -245,13 +250,14 @@ html> body{
 
   
   .sub-title > span{
-    font-size: 23px;
+    display: inline-block;
     overflow:hidden;
-    padding:1.3rem 0;
+  
   }
 
   .sub-title > span > span{
     font-size: 26px;
+    display: block;
 
   }
 
@@ -307,12 +313,12 @@ html> body{
   }
 
   .fp-viewing-1  .title-datail{
-    animation: fade-up 1.5s;
+    animation: fade-up 2s;
   }
 
   @keyframes fade-up{
     from {
-        transform: translatey(50px);
+        transform: translatey(70px);
         opacity: 0;
     }
     to {
@@ -331,19 +337,7 @@ html> body{
 
 
 
-  .fp-viewing-1  .phone-image{
-    animation: zoom-out 2.5s;
-  }
 
-  @keyframes zoom-out{
-    from {
-        offset: 0;
-    }
-    to {
-        
-         offset:200;
-    }
-  }
 
   /* 스타일가이드 */
   .style-guide{
@@ -375,7 +369,7 @@ html> body{
 
   @keyframes fade-right{
     from {
-        transform: translatex(-30px);
+        transform: translatex(-70px);
         opacity: 0;
     }
     to {
@@ -391,7 +385,7 @@ html> body{
 
   @keyframes fade-right{
     from {
-        transform: translatex(-50px);
+        transform: translatex(-70px);
         opacity: 0;
     }
     to {
@@ -407,7 +401,7 @@ html> body{
 
   @keyframes fade-right{
     from {
-        transform: translatex(-80px);
+        transform: translatex(-70px);
         opacity: 0;
     }
     to {
@@ -455,12 +449,12 @@ html> body{
 
 /* 인디 딥블루 */
 .fp-viewing-2  .font-color{
-    animation: fade-right 2.5s;
+    animation: fade-right 2s;
   }
 
   @keyframes fade-right{
     from {
-        transform: translatex(-30px);
+        transform: translatex(-50px);
         opacity: 0;
     }
     to {
@@ -474,12 +468,38 @@ html> body{
   .wire-frame{
     width: 1920px;
     height: 100vh;
-  
+    background-color: #F9F9F9;
+    position: relative;
   }
 
 
-  .wire-bg {
-    position: relative;
+  .wire-frame .wire-design {
+    width: 100%;
+    height:75%;
+    overflow: hidden;
+   position: absolute;
+   top: 25%;
+  
+   
+  }
+
+  .wire-frame .wire-design .wire-app{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .fp-viewing-3 .wire-app {
+    animation:zoom 1s;
+  }
+  
+  
+  @keyframes zoom {
+    from {
+      transform:scale(0.5);
+      opacity:0;
+    }
   }
 
   .wire-title {
@@ -528,3 +548,49 @@ html> body{
     width: 110px;
     height: 65px;
   }
+
+ 
+
+  /* 컬러설명 애니메이션 */
+  .fp-viewing-3 .wire-content .type-1  {
+    animation:zoom 1.5s;
+  }
+  
+  
+  @keyframes zoom {
+    from {
+      transform:scale(0.5);
+      opacity:0;
+    }
+  }
+  
+  .fp-viewing-3 .wire-content .type-2  {
+    animation:zoom 2.4s;
+  }
+  
+  
+  @keyframes zoom {
+    from {
+      transform:scale(0.5);
+      opacity:0;
+    }
+  }
+  
+
+  .fp-viewing-3 .wire-content .type-3  {
+    animation:zoom 2s;
+  }
+  
+  
+  @keyframes zoom {
+    from {
+      transform:scale(0.5);
+      opacity:0;
+    }
+  }
+  
+  /*  app-design-1 */
+
+.app-design-1{
+  background-color: #FDFBF3;
+}
