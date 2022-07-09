@@ -8,7 +8,7 @@
 
 
     <script src="./script/jquery-3.6.0.min.js"></script>
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
     
     <!-- 풀페이지 -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js" integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,13 +19,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    
-     <!-- aos -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- aos 불러오기 -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-
-
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+
 
 
 </head>
@@ -41,14 +43,18 @@
             <div class="page-contents">
 
                     <div class="title-option">
-                        <div class="main-title flex gap-20px">
+                        <div class="main-title flex gap-30px">
                             <a href="#" class="logo-font  "><img src="./images/Cléor.png" class=" " alt="로고-폰트"></a>
                  
                             <a href="#" class="cledorApp "><img src="./images/앱.png"  alt="끌레도르앱"></a>
                     
                          </div>
     
-                         <div class="mt-10px"><img src="./images/부제목.png" alt=""></a></div>
+                         <div class="sub-title mt-10px">
+                            <span ><span>아이스크림, <br>
+                                프리미엄 서비스의 시작 <b> &nbsp;끌레도르</b></span></span>
+                         
+                         </div>
                                 
                     </div>
                     
@@ -74,30 +80,105 @@
         </section>
 
         <section class="section project-overview">
-            <div class="overview-bg"><img src="./images/브랜드배경.png" class=" object-cover" alt="프로젝트 오버뷰 배경">
-
-           
-             <div class="overview-title">
-                <div data-aos="fade-up">
-                    <ul>
-                        <li class="title-name" ><img src="./images/name.png"  alt="프로젝트 오버뷰"></li>
-                        <li class="title-explain mt-33px "><span>끌레도르의 기존 사이트를 분석하였을때 타브랜드들과 큰 차이점을 둔 <br>
-                            <span class="font-bold">‘끌레도르 만의 프리미엄 아이스크림과 정기구독 서비스’</span>를 강조하기에는 <br>
-                            사이트 구성이 단조롭고, 브랜드색깔이 많이 나타나지 않은 것 같은 <br>
-                            아쉬움이 있어서 리디자인을 진행하게 되었습니다.</span></li>
-    
-                       
-                    </ul>
-    
-                </div>   
-               
-                <div class=" ">
-                    <img src="./images/프로젝트 폰이미지.png"  class=" phone-image block object-cover" alt="">
-                </div>
+            <img src="./images/브랜드배경.png" class="overview-bg w-full h-full object-cover" alt="프로젝트 오버뷰 배경">
               
-             </div>
+                <div class="overview-contents">
+                    <div class="overview-title"><img src="./images/name.png" alt=""></div>
 
+                    <div class="title-datail mt-30px">
+                        <span>끌레도르의 기존 사이트를 분석하였을때 타브랜드들과 큰 차이점을 둔 <br>
+                            <span class="font-bold">‘끌레도르 만의 프리미엄 아이스크림과 정기구독 서비스’ </span>를 강조하기에는 <br>
+                            사이트 구성이 단조롭고, 브랜드색깔이 많이 나타나지 않은 것 같은<br>
+                            아쉬움이 있어서 리디자인을 진행하게 되었습니다.</span>
+                    </div>
+
+
+                </div>
+
+                <div class="phone-image">
+                    <img src="./images/프로젝트 폰이미지2.png" alt="">
+                </div>
+                
+           
+           
+
+    
+        </section>
+
+        <section class="section style-guide ">
+            <div class="guide-contents row">
+                <div class="main-color cell">
+                    <div class="title flex">
+                        <div class="color-title"><img src="./images/title1.png" alt="메인컬러 제목"></div>
+                         <p class="ml-20px mt-10px">•&nbsp;&nbsp;밝으면서도 따뜻한 느낌을 줄수있는 컬러들을 사용하여 <br>
+                        &nbsp; &nbsp;전반적인 이미지형성에 도움을줄수있도록하였습니다.</p>
+                    </div>
+    
+                    <div class="color-image justify-center flex">
+                       <ul class="flex gap-40px">
+                        <li class="color-1">
+                        <img src="./images/indi-lightbrown.png" alt="인디라이트브라운">
+                        <p>Backgrounds/indi-LightBrown <br> 
+                            #FFEBCC</p> 
+                        </li>
+    
+                        <li class="color-2">
+                            <img src="./images/indi-green.png" alt="인디그린">
+                            <p>Backgrounds/indi-Green <br>
+                                #D3E4CD</p>
+                        </li>
+    
+                        <li class="color-3">
+                            <img src="./images/lightyellow.png" alt="인디라이트옐로우">
+                            <p>Backgrounds/LightYellow <br>
+                                #FEF9DE</p>
+                        </li>
+                       </ul>
+                    </div>
+                </div>
+    
+                <div class="main-font cell-r">
+                    <div class="title flex">
+                        <div class="font-title"><img src="./images/title2(font).png" alt="폰트 제목"> </div>
+                            <p class="ml-20px mt-20px">• &nbsp;Hahmlet 폰트와 Noto sans KR폰트 그리고 인디 딥블루 색상을 활용하여 가독성을 높였습니다.</p>
+                   
+                    </div>
+               
+                    <div class="font-detail ml-40px flex">
+                        <div class="font-color">
+                            <img src="./images/indi-deepblue.png" alt="딥블루">
+                            <p>Mainpage-font/indi-deepblue <br>
+                                #586385</p>
+                        </div>
+                       
+                        <ul >
+                            <li><img src="./images/햄릿폰트.png" alt="햄릿폰트"></li>
+                            <li></li> <img src="./images/노토산스.png" alt="노토산스 kr"></li>
+                        </ul>
+                    </div>
             </div>
+        </section>
+
+        <section class="section wire-frame">
+            <img src="./images/와이어프레임배경이미지.png" class="wire-bg w-full h-full object-cover " alt="와이어프레임배경이미지">
+              
+            <div class="wire-title ">
+                <img src="./images/와이어프레임 타이틀.png" class="block object-cover "  alt="제목">
+
+                <p class="mt-10px ml-40px"> • 메인컬러 3가지 (#FFEBCC, #D3E4C, #FEF9DE) 를 바탕으로 심플하면서도 끌레도르만의 특유 분위기와 감성을 나타낼수 있도록 디자인하였습니다. </p>
+            </div>
+
+            <div class="wire-content">
+            <ul>
+                <li><img src="./images/컬러설명1.png" class="type-1" alt=""></li>
+
+                <li><img src="./images/컬러설명2.png" class="type-2" alt=""></li>
+
+                <li><img src="./images/컬러설명3.png" class="type-3" alt=""></li>
+            </ul>
+            
+            </div>
+
         </section>
 
     </div>
