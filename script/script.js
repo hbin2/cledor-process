@@ -11,7 +11,7 @@ new fullpage('#fullpage', {
 
   var subTitle = gsap.timeline({
     repeat:-1,
-    repeatDelay:2
+    repeatDelay:1.5
   });
 
   subTitle.from(".sub-title > span > span",  {

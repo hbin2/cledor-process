@@ -593,4 +593,58 @@ html> body{
 
 .app-design-1{
   background-color: #FDFBF3;
+  width: 1920px;
+
+  position: relative;
+}
+
+
+.design1-page-1 > .title{
+  position: absolute;
+  left: 8%;
+  top: 8%;
+}
+
+.appslide-photo{
+  position: absolute;
+  top: 20%;
+  left: 13%;
+}
+
+.slide-photo-1{
+  z-index: 5;
+}
+
+.appslide-photo-list{
+  margin-top: 6%;
+  margin-left: -5%;
+}
+
+.appslide-photo-list > li:nth-child(1){
+  z-index: 4;
+}
+
+.appslide-photo-list > li:nth-child(2) {
+  margin-left: -6%;
+  z-index: 3;
+}
+
+.appslide-photo-list > li:nth-child(3) {
+  margin-left: -6%;
+
+}
+
+
+.detail-1{
+  z-index: 10;
+  position: absolute;
+   top: 25%;
+   left: 31%;
+}
+
+.detail-2{
+  z-index: 9;
+  position: absolute;
+   top: 86%;
+   left:32%;
 }
