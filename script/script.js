@@ -1,6 +1,10 @@
 new fullpage('#fullpage', {
-    licenseKey: 'YOUR KEY HERE',
     
+    navigation:true,
+    navigationPosition: 'right',
+    showActiveTooltip:true,
+
+   
   });
 
   // aos 라이브러리

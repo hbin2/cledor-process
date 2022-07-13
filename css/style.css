@@ -204,6 +204,43 @@ html> body{
     }
 
 
+    /* 풀페이지 툴팁 */
+
+    /* 동그라미 애니메이션 */
+
+    #fp-nav ul li a{
+      width: 2px;
+      height: 2px;
+      margin: 8px 0 0 9px; 
+     
+    }
+
+   
+    #fp-nav ul li a span{
+      background-color: rgb(240, 204, 3);
+      margin: -2px 0 0 -2px;
+  
+    }
+
+    
+
+    /* 글자  */
+    #fp-nav ul li .fp-tooltip{
+      color: #7b7b7b;
+     font-family: 'Noto Sans KR', sans-serif;
+     margin-top: -8px;
+  
+    }
+
+    #fp-nav ul li:nth-child(1) .fp-tooltip{
+      color: white;
+    }
+
+    #fp-nav ul li:nth-child(2) .fp-tooltip{
+      color: white;
+    }
+
+
 
  /* 메인페이지  */
     .main-page{
@@ -599,7 +636,7 @@ html> body{
 }
 
 
-.design1-page-1 > .title{
+.design-page-1 > .title{
   position: absolute;
   left: 8%;
   top: 8%;
@@ -648,3 +685,4 @@ html> body{
    top: 86%;
    left:32%;
 }
+
