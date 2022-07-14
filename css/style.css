@@ -140,6 +140,8 @@ img, video{
     margin-top: 40px;
 }
 
+
+
 .mt-60px{
     margin-top: 60px;
 }
@@ -217,7 +219,7 @@ html> body{
 
    
     #fp-nav ul li a span{
-      background-color: rgb(240, 204, 3);
+      background-color: rgb(255, 167, 130);
       margin: -2px 0 0 -2px;
   
     }
@@ -627,62 +629,84 @@ html> body{
   }
   
   /*  app-design-1 */
+  .app-design-1{
+    background-color: #FDFBF3;
+    width: 100%;
+   
+  }
 
-.app-design-1{
-  background-color: #FDFBF3;
-  width: 1920px;
+  .app-content-1{
+    position: relative;
+  }
 
-  position: relative;
-}
+  .app-list-1{
+   margin-top: 8.3%;
+  }
+ 
+  .app-list-1 > ul >li{
+   margin-left: -7%;
+  }
+
+  .app-main-1 {
+    z-index: 20;
+  }
+
+  .app-list-1 > ul >li:first-child{
+    z-index: 18;
+  }
+
+  .app-list-1 > ul >li:nth-child(2){
+    z-index: 17;
+  }
+
+  .main-text-1{
+     position: absolute;
+     top: 12%;
+     left: 30%;
+     z-index: 21;
+  }
+
+  .main-text-2{
+    position: absolute;
+    bottom: -7%;
+    left: 33%;
+    z-index: 21;
+ }
+
+ /* app-content-2 */
+
+ .app-page-2 > ul{
+   margin-left: 21%;
+   margin-top: 10%;
+
+ }
+
+ .page-2-text{
+  margin-top: 24%;
+  margin-left: -14%;
+ }
+
+ /* app-content-3 */
+ .page-list-3{
+  margin-left: 20px;
+  margin-top: 10px;
+ }
+
+ .page-list-3 > li:first-child{
+  margin-top: 11%;
+  margin-left: 22%;
+  z-index: 21;
+ }
 
 
-.design-page-1 > .title{
-  position: absolute;
-  left: 8%;
-  top: 8%;
-}
+ .page-list-3 > li:last-child{
+  margin-top: -10%;
+  margin-left: -7%;
+ }
 
-.appslide-photo{
-  position: absolute;
-  top: 20%;
-  left: 13%;
-}
+ /* app-design-2 */
 
-.slide-photo-1{
-  z-index: 5;
-}
-
-.appslide-photo-list{
-  margin-top: 6%;
-  margin-left: -5%;
-}
-
-.appslide-photo-list > li:nth-child(1){
-  z-index: 4;
-}
-
-.appslide-photo-list > li:nth-child(2) {
-  margin-left: -6%;
-  z-index: 3;
-}
-
-.appslide-photo-list > li:nth-child(3) {
-  margin-left: -6%;
-
-}
-
-
-.detail-1{
-  z-index: 10;
-  position: absolute;
-   top: 25%;
-   left: 31%;
-}
-
-.detail-2{
-  z-index: 9;
-  position: absolute;
-   top: 86%;
-   left:32%;
-}
-
+ .app-design-2{
+  width: 100%;
+  background-color: #F6F0ED;
+ }
