@@ -219,7 +219,7 @@ html> body{
 
    
     #fp-nav ul li a span{
-      background-color: rgb(255, 167, 130);
+      background-color: #ffcb5a;
       margin: -2px 0 0 -2px;
   
     }
@@ -651,6 +651,26 @@ html> body{
     z-index: 20;
   }
 
+  
+ .fp-viewing-4  .app-mainpage-1{
+  animation: fade-left 2s;
+}
+
+@keyframes fade-left{
+  from {
+      transform: translatex(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translatex(0);
+       opacity: 1;
+  }
+}
+
+ 
+
+
+
   .app-list-1 > ul >li:first-child{
     z-index: 18;
   }
@@ -681,6 +701,26 @@ html> body{
 
  }
 
+
+
+ /* .fp-viewing-4 .page-2-image{
+  animation: fade-right 2s;
+
+}
+
+@keyframes fade-right{
+  from {
+      transform: translatex(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translatex(0);
+       opacity: 1;
+  }
+} */
+
+ 
+
  .page-2-text{
   margin-top: 24%;
   margin-left: -14%;
@@ -692,6 +732,22 @@ html> body{
   margin-top: 10px;
  }
 
+ .fp-viewing-4  .page-3-image{
+  animation: fade-left 2s;
+}
+
+@keyframes fade-left{
+  from {
+      transform: translatex(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translatex(0);
+       opacity: 1;
+  }
+}
+
+
  .page-list-3 > li:first-child{
   margin-top: 11%;
   margin-left: 22%;
@@ -701,12 +757,151 @@ html> body{
 
  .page-list-3 > li:last-child{
   margin-top: -10%;
-  margin-left: -7%;
+  margin-left: -5%;
  }
 
  /* app-design-2 */
 
- .app-design-2{
-  width: 100%;
-  background-color: #F6F0ED;
+ /* surve-contetnt-1 */
+
+ .app-design-2 {
+   width: 100%;
+   background-color: #F6F0ED;
+
  }
+
+ .surve-list-1>ul {
+   margin-top: -29%;
+ }
+
+ .surve-list-1>ul>li:first-child {
+   margin-top: 21.5%;
+   margin-left: 13.5%;
+
+ }
+
+ .surve-list-1>ul>li:last-child {
+   margin-left: 10%;
+
+ }
+
+ /* surve-page 앱이미지-1*/
+
+ .surve-list-2 >li:first-child{
+  margin-top: 5%;
+  margin-left: -5%;
+ }
+ 
+ .surve-list-2 >li:nth-child(2){
+ margin-top: 5%;
+  margin-left: -7%;
+ }
+ 
+ .surve-list-2 >li:nth-child(3){
+  margin-top: 7%;
+   margin-left: -11%;
+  }
+  
+
+  .surve-list-2 >li:nth-child(4){
+    margin-top: 5%;
+   margin-left: -7%;
+    }
+    
+    /* surve-page 앱이미지-2*/
+     .surve-list-3 > li:nth-child(1)>img{
+      margin-top: 11.5%;
+      margin-left: 20.5%;
+    
+     }
+
+     .surve-list-3 > li:nth-child(2)>img{
+      margin-top: 34%;
+      margin-left: 25.5%;
+  
+     }
+
+
+
+     /* surve-page 앱이미지-3*/
+      .surve-list-4 > li:nth-child(1){
+           margin-top: -1.5%;
+           margin-left: -8%;
+      }
+   
+      .surve-list-4 > li:nth-child(2){
+        margin-top: -1.5%;
+        margin-left: -15%;
+   }
+
+   .surve-list-4 > li:nth-child(3){
+    margin-top: -11%;
+    margin-left: -15.5%;
+}
+
+.surve-list-4 > li:nth-child(4){
+  margin-top: -11%;
+  margin-left: -7%;
+}
+
+
+
+
+/* section last-page */
+/* 메인페이지  */
+.last-page{
+  width: 1920px;
+  height: 100vh;
+  background-color: #D5DEC7;
+  position: relative;
+}
+
+.last-page-title {
+position: absolute;
+top: 18%;
+left: 10%;
+}
+
+/* 로고이미지 */
+.last-page-title  .cledorApp img {
+animation:fly 2s linear infinite;
+}
+
+
+.cledorApp img{
+width: 100%;
+display: block;
+}
+
+@keyframes fly {
+
+0% {
+
+}
+
+50% {
+transform: translateY(20px);
+}
+
+
+100% {
+
+}
+}
+
+
+
+
+.sub-title > span{
+display: inline-block;
+overflow:hidden;
+
+}
+
+.sub-title > span > span{
+font-size: 26px;
+display: block;
+
+}
+
+

@@ -13,7 +13,10 @@ new fullpage('#fullpage', {
 
   // aos 라이브러리
 
-  AOS.init();
+  AOS.init({
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: true, // whether elements should animate out while scrolling past them
+  });
 
   // 서브타이틀 애니메이션
 
@@ -40,7 +43,4 @@ new fullpage('#fullpage', {
         from: "end"
       }
     }, "+=2");
-    
 
-
-      
