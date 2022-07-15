@@ -242,6 +242,10 @@ html> body{
       color: white;
     }
 
+    #fp-nav ul li:last-child .fp-tooltip{
+      color: white;
+    }
+
 
 
  /* 메인페이지  */
