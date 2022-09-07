@@ -756,10 +756,40 @@ html> body{
 
  }
 
+ .fp-viewing-5 .surve-list-1 .surve-detail-1  {
+  animation:zoom 1.5s;
+}
+
+
+@keyframes zoom {
+  from {
+    transform:scale(0.2);
+    opacity:0;
+  }
+}
+
+ 
+
+
+
  .surve-list-1>ul>li:last-child {
    margin-left: 10%;
 
  }
+
+
+ .fp-viewing-5 .surve-list-1 .surve-detail-2  {
+  animation:zoom 1.5s;
+}
+
+
+@keyframes zoom {
+  from {
+    transform:scale(0.3);
+    opacity:0;
+  }
+}
+
 
  /* surve-page 앱이미지-1*/
 
@@ -800,7 +830,7 @@ html> body{
 
        
 
-.fp-viewing-5 .surve-mainpage-1 {
+/* .fp-viewing-5 .surve-mainpage-1 {
   animation:fade-in-left 1.5s;
  
 }
@@ -818,7 +848,8 @@ html> body{
   transform: translateX(0);
   opacity: 1
 }
-}
+} */
+
  
  
  /* surve-page 앱이미지-3*/
